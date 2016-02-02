@@ -1,8 +1,19 @@
 extends ./views/layout.jade
 
+block append style
+    link(
+      rel="stylesheet"
+      href="./vendor/fullpage.js/dist/jquery.fullpage.css"
+    )
+    link(
+      rel="stylesheet"
+      href="./css/style.css"
+    )
 
 block content
   h1 title  
 
 block append scripts
+  script(src='./vendor/fullpage.js/dist/jquery.fullpage.js')
+  script(src='./vendor/move.js/move.js')
   script(src='./js/index.js')

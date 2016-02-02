@@ -34,6 +34,14 @@ gulp.task('jade2html', function() {
         .pipe(gulp.dest('./dist/'))
 });
 
+gulp.task('sass', function () {
+  return gulp.src('./src/sass/**/*.scss')
+    .pipe(glp.sourcemaps.init())
+    .pipe(glp.sass().on('error', glp.sass.logError))
+    .pipe(glp.sourcemaps.write())
+    .pipe(gulp.dest('./dist/css/'));
+});
+
 // watch task with livereload
 gulp.task('watch', function() {
     glp.livereload.listen();
@@ -51,4 +59,4 @@ gulp.task('connect', function() {
 });
 
 // deaault task
-gulp.task('default', ['watch', 'connect']);
+gulp.task('default', ['jade2html','watch', 'connect']);
