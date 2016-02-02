@@ -1,0 +1,28 @@
+{
+  "name": "resume vendor",
+  "description": "web resumne",
+  "main": "index.js",
+  "authors": [
+    "xkrabb"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "resume"
+  ],
+  "homepage": "https://github.com/xkrabb/web-resume",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.6",
+    "fullpage.js": "~2.7.7",
+    "move.js": "visionmedia/move.js#~0.5.0"
+  }
+}

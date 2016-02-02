@@ -1,0 +1,7 @@
+.*
+!.gitignore
+!.bowerrc
+!.jshintrc
+node_modules/
+/src/vendor
+/dist
