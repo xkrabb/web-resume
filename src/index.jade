@@ -1,19 +1,37 @@
-extends ./views/layout.jade
+extends ./views/resume_layout.jade
+include ./views/index.mixin.jade
 
-block append style
-    link(
-      rel="stylesheet"
-      href="./vendor/fullpage.js/dist/jquery.fullpage.css"
-    )
-    link(
-      rel="stylesheet"
-      href="./css/style.css"
-    )
+block headernav
+  header#head-menu
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+            span.sr-only Toggle navigation
+            each val in resumeinfo.pages
+              span.icon-bar
+          a(class="navbar-brank" href="#") Brank
+    
+        .collapse.navbar-collapse.navbar-right#bs-example-navbar-collapse-1
+          +head-nav(resumeinfo.pages)
 
-block content
-  h1 title  
+block page1
+  div(class="section page1" data-anchor="page1")
+    .p1-head-bg
+      +p1-name-info(resumeinfo.name, resumeinfo.position)
 
-block append scripts
-  script(src='./vendor/fullpage.js/dist/jquery.fullpage.js')
-  script(src='./vendor/move.js/move.js')
-  script(src='./js/index.js')
+    .col-sm-12
+      +p1-head-img(resumeinfo.imgUrl, resumeinfo.name)
+
+    .col-sm-6.sel-intr
+
+    .col-sm-6.contact-info
+
+block page2
+  div(class="section page2" data-anchor="page2") page2 content
+
+block page3
+  div(class="section page2" data-anchor="page3") page3 content
+
+block page4
+  div(class="section page2" data-anchor="page4") page4 content

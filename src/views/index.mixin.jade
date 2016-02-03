@@ -1,0 +1,23 @@
+//- header nav
+mixin head-nav(links)
+  ul.nav.navbar-nav
+    each val in links
+      li(data-menuanchor=val.code)
+        a(href='#'+val.code)=val.name
+
+mixin p1-name-info(name, position)
+  .row
+    .col-sm-offset-8.col-ms-4.peronal-info
+      p(class="p1-name")=name
+      p(class="p1-position")=position
+
+mixin p1-head-img(imgUrl, name)
+  .img-wrap
+    img(src=imgUrl alt="My name is"+name)
+
+mixin p1-intro-content()
+
+
+mixin p1-contact()
+
+    

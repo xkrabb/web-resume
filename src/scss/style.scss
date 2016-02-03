@@ -1,0 +1,52 @@
+/*font size*/
+$title-fs: 20px;
+$subtitle-fs: 18px;
+$content-fs: 14px;
+
+/*color*/ 
+
+
+
+body {
+    // background-color: #ccc;
+}
+#head-menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.p1-head-bg {
+    padding-top: 10%;
+    width: 100%;
+    height: 25%;
+    background-color: #40417c;
+    color: #fff;
+    font-size: $subtitle-fs;
+    .peronal-info {
+        padding-left: 20px;
+    }
+    .p1-name {
+        font-size: 24px;
+    }
+}
+
+.img-wrap {
+    position: relative;
+    margin: -150px auto;
+    height: 220px;
+    width: 220px;
+    border: 10px solid #40417c;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

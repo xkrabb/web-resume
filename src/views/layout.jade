@@ -1,20 +1,26 @@
 doctype html
 html
   head
-    title My Resume Site
+
+    block webtitle
+      title Resume Site
+
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+
     block style
       link(
         rel="stylesheet"
         href="./vendor/bootstrap/dist/css/bootstrap.css"
       )
+
   body
+    block headernav
+      
     block content
+
     block foot
-      footer.footer
-        p some footer content
 
     block scripts
       script(src='./vendor/jquery/dist/jquery.js')

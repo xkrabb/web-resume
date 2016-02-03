@@ -1,0 +1,30 @@
+extends ./layout.jade
+
+block append style
+    link(
+      rel="stylesheet"
+      href="./vendor/fullpage.js/dist/jquery.fullpage.css"
+    )
+    link(
+      rel="stylesheet"
+      href="./css/style.css"
+    )
+
+block webtitle
+  title resume
+
+block headernav
+
+block content
+  #fullpage
+    block page1
+    block page2
+    block page3
+    block page4
+
+block foot
+
+block append scripts
+  script(src='./vendor/fullpage.js/dist/jquery.fullpage.js')
+  script(src='./vendor/move.js/move.js')
+  script(src='./js/index.js')

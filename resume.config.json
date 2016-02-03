@@ -1,3 +1,18 @@
 {
-    "lang_type": "zh-CN"
+    "lang_type": "zh-CN",
+    "name": "徐康",
+    "pages": [{
+        "code": "page1",
+        "name": "基本信息"
+    }, {
+        "code": "page2",
+        "name": "产品信息"
+    }, {
+        "code": "page3",
+        "name": "特色介绍"
+    }, {
+        "code": "page4",
+        "name": "联系我们"
+    }],
+    "imgUrl": "./images/xukang.jpg"
 }
