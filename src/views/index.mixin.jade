@@ -16,10 +16,49 @@ mixin p1-head-img(imgUrl, name)
     img(src=imgUrl alt="My name is"+name)
 
 mixin p1-intro-content(info, infotitle)
-  h3=infotitle
-  p=info
+  .p1-left
+    h3=infotitle
+    p=info
 
 
-mixin p1-contact()
+mixin contact-list(title, contactinfo)
+  .p1-right
+    h3=title
+    ul
+      each val in contactinfo
+        li
+          span(class="contact-icon glyphicon glyphicon-"+val.type aria-hidden="true")
+          span=val.val
+
+mixin p1-name-position(perinfo)
+  .col-sm-6.text-right
+    h3 基本
+    p=perinfo[0]
+    p=perinfo[1]
+
+
+mixin p1-base-info(perinfo)
+  .col-sm-6.text-left
+    h3 信息
+    p=perinfo[0]
+    p=perinfo[1]
+
+mixin education-list()
+
+
+mixin work-list()
+
+
+mixin project-list()
+
+
+mixin skill-list()
+
+
+mixin hobbies-list()
+
+
+
+
 
     

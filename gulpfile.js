@@ -7,7 +7,7 @@ var srcPath = {
     img: './src/images/*',
     js: './src/js/*.js',
     vendor: './src/vendor/**',
-    scss: './src/scss/**/*.scss',
+    scss: './src/scss/style.scss',
     views: './src/views/*.jade',
     indexpage: './src/index.jade',
     config: './resume.config.json',

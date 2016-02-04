@@ -1,63 +1,45 @@
-/*font size*/
-$title-fs: 20px;
-$subtitle-fs: 18px;
-$content-fs: 14px;
-
-/*color*/ 
-
-
-
-body {
-    // background-color: #ccc;
-}
+@import './index/page1.scss';
+@import './index/page2.scss';
+@import './index/page3.scss';
+@import './index/page4.scss';
 #head-menu {
     position: absolute;
     width: 100%;
     top: 0;
     z-index: 1;
-}
-
-.navbar {
-    border-radius: 0;
-}
-
-
-// page1
-.p1-head-bg {
-    position: relative;
-    padding-top: 10%;
-    width: 100%;
-    height: 30%;
-    background-color: #40417c;
-    color: #fff;
-    font-size: $subtitle-fs;
-    .peronal-info {
-        position: absolute;
-        padding-left: 20px;
-        bottom: 0;
+    .navbar {
+        border-radius: 0;
     }
-    .p1-name {
-        font-size: 24px;
+    .nav-bar-first {
+        transition: all 0.7s;
+        border-radius: 0;
+        background-color: #11282b;
+        border-color: #11282b;
+        li a {
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+        }
+        li.active {
+            a {
+                font-size: 14px;
+                background-color: rgba(0, 0, 0, 0);
+                color: orange;
+            }
+        }
     }
-}
-
-.sel-intr {
-    border: 1px solid red;
-}
-.img-wrap {
-    position: relative;
-    margin: -150px auto;
-    height: 220px;
-    width: 220px;
-    border: 10px solid #40417c;
-    border-radius: 50%;
-    overflow: hidden;
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
+    .nav-bar-others {
+        transition: all 0.7s;
+        li a {
+            font-size: 12px;
+            font-weight: 700;
+        }
+        li.active {
+            a {
+                font-size: 14px;
+                background-color: rgba(0, 0, 0, 0);
+                color: orange;
+            }
+        }
     }
 }
-
-
-// page2

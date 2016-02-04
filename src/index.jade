@@ -3,14 +3,14 @@ include ./views/index.mixin.jade
 
 block headernav
   header#head-menu
-    nav.navbar.navbar-default
+    nav.navbar.navbar-default.nav-bar-first
       .container-fluid
         .navbar-header
           button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
             span.sr-only Toggle navigation
             each val in resumeinfo.pages
               span.icon-bar
-          a(class="navbar-brank" href="#") Brank
+          span(class="navbar-brank resume-logo" ) Product
     
         .collapse.navbar-collapse.navbar-right#bs-example-navbar-collapse-1
           +head-nav(resumeinfo.pages)
@@ -18,15 +18,14 @@ block headernav
 block page1
   div(class="section page1" data-anchor="page1")
     .p1-head-bg
-      +p1-name-info(resumeinfo.name, resumeinfo.position)
-
+      //- +p1-name-info(resumeinfo.name, resumeinfo.position)
     .col-sm-12
       +p1-head-img(resumeinfo.imgUrl, resumeinfo.name)
 
-    .col-sm-6.sel-intr
-      +p1-intro-content(resumeinfo.introinfo, resumeinfo.introTitle)
+    .big-name
+      +p1-name-position(resumeinfo.personinfo)
+      +p1-base-info(resumeinfo.personinfo)
 
-    .col-sm-6.contact-info
 
 block page2
   div(class="section page2" data-anchor="page2") page2 content
@@ -35,4 +34,9 @@ block page3
   div(class="section page2" data-anchor="page3") page3 content
 
 block page4
-  div(class="section page2" data-anchor="page4") page4 content
+  div(class="section page2" data-anchor="page4")
+    .col-sm-6.sel-intr
+      +p1-intro-content(resumeinfo.introinfo, resumeinfo.introTitle)
+
+    .col-sm-6.contact-info
+      +contact-list(resumeinfo.contactTitle, resumeinfo.contactinfo)
