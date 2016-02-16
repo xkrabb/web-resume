@@ -1,7 +1,8 @@
 {
     "resume_title": "xxx--的信息",
     "page1-title": "页面1标题2211",
-    "personinfo": ["名字","干啥事情的"],
+    "personinfo": ["徐康","前端攻城狮"],
+    "":"",
     "introinfo": "sass有两种后缀名文件：一种后缀名为sass，不使用大括号和分号；另一种就是我们这里使用的scss文件，这种和我们平时写的css文件格式差不多，使用大括号和分号。而本教程中所说的所有sass文件都指后缀名为scss的文件。在此也建议使用后缀名为scss的文件，以避免sass后缀名的严格格式要求报错。",
     "contactinfo": [{
         "type": "phone",
