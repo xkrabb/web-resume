@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         sectionsColor: ['whitesmoke', '#4BBFC3', '#7BAABE', '#1bbc9b'],
         menu: $('#head-menu'),
-        navigation: true,
+        // navigation: true,
         paddingTop: '50px',
         verticalCentered: false,
         afterLoad: function(anchorLink, index) {
