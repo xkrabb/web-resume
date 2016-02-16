@@ -24,16 +24,24 @@ block page1
 
     .big-name
       +p1-name-position(resumeinfo.personinfo)
-      +p1-base-info(resumeinfo.personinfo)
+      +p1-base-info(resumeinfo.baseinfo)
 
 
 block page2
   div(class="section page2" data-anchor="page2")
-    div(class="slide" data-anchor="slide1") slide 1
-    div(class="slide" data-anchor="slide1") slide 2
+    div(class="slide" data-anchor="slide1") 
+      +project-experience(resumeinfo.projectinfo)
+
+    div(class="slide" data-anchor="slide2")
+      +work-experience(resumeinfo.workinfo)
+    
+    div(class="slide" data-anchor="slide3")
+      +education-list()
 
 block page3
-  div(class="section page2" data-anchor="page3") page3 content
+  div(class="section page2" data-anchor="page3")
+    +skill-list()
+    +hobbies-list()
 
 block page4
   div(class="section page2" data-anchor="page4")

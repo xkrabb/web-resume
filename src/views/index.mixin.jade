@@ -33,30 +33,29 @@ mixin contact-list(title, contactinfo)
 mixin p1-name-position(perinfo)
   .col-sm-6.text-right
     h3 基本
-    p=perinfo[0]
-    p=perinfo[1]
-
+    each val,key in perinfo
+      p(class="base-info-"+key)=val
 
 mixin p1-base-info(perinfo)
   .col-sm-6.text-left
     h3 信息
-    p=perinfo[0]
-    p=perinfo[1]
+    each val in perinfo
+      p=val
 
 mixin education-list()
+  h3 教育背景
 
+mixin project-experience(info)
+  h3 项目经验
 
-mixin work-list()
-
-
-mixin project-list()
-
+mixin work-experience(info)
+  h3 工作经历
 
 mixin skill-list()
-
+  h3 职业技能
 
 mixin hobbies-list()
-
+  h3 兴趣爱好
 
 
 

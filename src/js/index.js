@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        sectionsColor: ['whitesmoke', '#4BBFC3', '#7BAABE', '#1bbc9b'],
+        sectionsColor: ['whitesmoke', 'whitesmoke', 'whitesmoke', 'whitesmoke'],
         menu: $('#head-menu'),
         // navigation: true,
         paddingTop: '50px',
