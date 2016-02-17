@@ -13,5 +13,64 @@
         },{
         "type": "pushpin",
         "val": "www.12345678910.com"
-    }]
+    }],
+    "projectinfo": [{
+        "projectname": "web简历(2016-01 至 今)",
+        "projectdesc": "个人项目，web简历，项目地址：https://github.com/xkrabb/web-resume利用gulp自动化构建项目开发，主要应用jade模板引擎编写html，scss编写样式，fullpage-jquery插件实现全屏切换。简历中个人信息通过json文件导入。"
+    },{
+        "projectname": "每刻报销(2015-06 至 2016-01)",
+        "projectdesc": "每刻报销是一款在线报销产品，方便及简化企业内部员工报销流程，类似concur差旅与费用报销管理。在项目中参与了移动端和PC端的开发：移动端使用Ionic开发每刻原始版本，负责报销单创建及费用报表页面。PC端使用AngluarJs完成，主要负责首页，报表，报销单创建和部分的企业设置页面功能，首页的视图和报表由D3.js的AngluarJs插件绘制。"
+    },{
+        "projectname": "导视屏二期(2015-04 至 2015-06)",
+        "projectdesc": "大楼的屏幕导航设备，主要指示楼层信息，播放轮播广告及与指定楼层商家视频通话。项目主要是使用Bootstrap和Jquery框架，并且应用了velocity模板引擎。主要负责二期需要变更及修改，编写Jquery插件实现广告轮播时间控制和多台设备轮播与楼层信息切换控制。"
+    }],
+    "workinfo": [{
+        "workname":"浙江网新恒天软件有限公司(2015-03 至 今)",
+        "workpos": "前端开发",
+        "workdesc":"网新恒天UED部门从事前端开发，先后参与导视频项目和每刻产品开发，负责前端页面及交互开发，参与公司前端标准化工作。主要使用过angualrjs，bootstrap，jquery等框架。"
+    },{
+        "workname":"杭州亚信软件有限公司(2014-06 至 2014-10)",
+        "workpos": "java开发",
+        "workdesc":"杭州亚信ODC部门从事java开发，参于电信项目接口开发与维护，主要工作是开发CRM与BOS计费系统间的数据交互接口，涉及Linux，Oracle，Hibernate相关技术及使用。"
+    }],
+    "eduinfo":[{
+        "schoolname": "浙江理工大学(硕士)",
+        "duringtime": "2012-09 至 2015-03",
+        "subject": "信号与信息处理",
+        "others": ""
+    },{
+        "schoolname": "浙江科技学院(本科)",
+        "duringtime": "2006-09 至 2010-06",
+        "subject": "应用物理",
+        "others": ""
+    }],
+    "skills":[{
+        "name":"HTML / CSS / JS",
+        "score":"8"
+    },{
+        "name":"Anagularjs / Ionic",
+        "score":"7"
+    },{
+        "name":"Bootstrap / Jquery",
+        "score":"7"
+    },{
+        "name":"Gulp / Yeoman",
+        "score":"7"      
+    },{
+        "name":"HTML5 / CSS3",
+        "score":"6"
+    },{
+        "name":"Java / mysql",
+        "score":"6"
+    },{
+        "name":"Nodejs",
+        "score":"5"
+    }],
+    "hobbies":[{
+        "type": "",
+        "name": "摄影"
+    },{
+        "type": "",
+        "name": "心理学"
+        }]
 }

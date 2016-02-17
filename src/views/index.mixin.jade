@@ -44,20 +44,55 @@ mixin p1-base-info(perinfo)
     each val in perinfo
       p=val
 
-mixin education-list()
-  h3 教育背景
+mixin education-list(info)
+  .col-sm-12
+    h3 教育背景
+  .col-sm-12.project-detail
+    each val in info
+      .project-singel
+        .col-sm-offset-1.col-sm-3=val.schoolname 
+        .col-sm-4=val.subject
+        .col-sm-4=val.duringtime
+        .col-sm-12=val.others
 
 mixin project-experience(info)
-  h3 项目经验
+  .col-sm-12
+    h3 项目经验
+  .col-sm-12.project-detail
+    each val in info
+      .project-singel
+        .col-sm-offset-1.col-sm-2 项目名称：
+        .col-sm-8=val.projectname 
+        .col-sm-offset-1.col-sm-2 项目描述：
+        .col-sm-8=val.projectdesc
 
 mixin work-experience(info)
-  h3 工作经历
+  .col-sm-12
+    h3 工作经历
+  .col-sm-12.project-detail
+    each val in info
+      .project-singel
+        .col-sm-offset-1.col-sm-2 公司名称：
+        .col-sm-4=val.workname 
+        .col-sm-5=val.workpos
+        .col-sm-offset-1.col-sm-2 详细描述：
+        .col-sm-8=val.workdesc
 
-mixin skill-list()
-  h3 职业技能
-
-mixin hobbies-list()
-  h3 兴趣爱好
+mixin skill-list(info)
+  .col-sm-12
+    h3 职业技能
+  each val in info
+    .col-sm-6.skill-singel
+      .col-sm-4=val.name
+      .col-sm-8.out-line
+        div(class="hied-score-hander hide-score-"+val.score)
+      
+mixin hobbies-list(info)
+  .col-sm-12
+    h3 兴趣爱好
+  each val in info
+    .col-sm-6.skill-singel
+      .col-sm-12=val.name
 
 
 

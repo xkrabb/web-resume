@@ -116,3 +116,62 @@
     font-size: 28px;
     font-weight: 700;
 }
+
+.project-detail {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.project-singel {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.skill-singel {
+    margin-bottom: 10px;
+}
+
+.out-line {
+    height: 20px;
+    width: 200px;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.hide-score-5 {
+    transition: left 1s;
+    position:absolute;
+    left: -100px;
+    height: 18px;
+    width: 100px;
+    background-color: orange;
+}
+.hide-score-6 {
+    transition: left 1s;
+    position:absolute;
+    left: -120px;
+    height: 18px;
+    width: 120px;
+    background-color: orange;
+}
+.hide-score-7 {
+    transition: left 1s;
+    position:absolute;
+    left: -140px;
+    height: 18px;
+    width: 140px;
+    background-color: orange;
+}
+.hide-score-8 {
+    transition: left 1s;
+    position:absolute;
+    left: -160px;
+    height: 18px;
+    width: 160px;
+    background-color: orange;
+}
+.show-socre {
+    left: 0;
+    nsition: left 0.7s;
+}
